@@ -1,15 +1,20 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class = "menu">
+  <a>menu</a>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
+  name: 'App',data(){
+    return {
+      temporature : 23, region : 'gangnam', dust : 30
+
+
+    }
+  },
   components: {
-    HelloWorld
   }
 }
 </script>
@@ -22,5 +27,15 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.menu {
+  background : darkslateblue;
+  padding : 15px;
+  border-radius: 5px;
+}
+
+.menu a {
+  color : white;
+  padding : 10px;
 }
 </style>
